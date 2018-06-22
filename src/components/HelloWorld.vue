@@ -33,10 +33,11 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import {This} from './namespace';
 
 @Component
 export default class HelloWorld extends Vue {
-  @Prop() private msg!: string;
+  @Prop() private msg!: This.Is.Nested.Namespace.Type;
 }
 </script>
 
